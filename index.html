@@ -55,6 +55,7 @@
     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <script>
         function toggleDarkMode() {
+            console.log("toggleDarkMode() called");
             var body = document.querySelector('body');
             body.classList.toggle('dark-mode');
         }
