@@ -1,28 +1,66 @@
-:root {
-    /* Light mode colors based on the OMI Style Guide */
-    --primary-blue: #13294b;
-    --dark-yellow: #ffd125;
-    --salmon: #ee5e5e;
-    --gray-blue: #6fafc7;
-    --teal: #0d605e;
-    --neutral: #E8E9EA;
-
-    /* Dark mode colors based on the OMI Style Guide */
-    --primary-blue-dark: #ffffff;
-    --dark-yellow-dark: #ffd125;
-    --salmon-dark: #ee5e5e;
-    --gray-blue-dark: #6fafc7;
-    --teal-dark: #0d605e;
-    --neutral-dark: #1c1c1c;
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: var(--neutral);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--neutral-light);
+    padding: 1rem;
+}
+
+header .logo {
+    height: 3rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
     color: var(--primary-blue);
-    font-family: Verdana, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section ul {
+    margin-left: 2rem;
+}
+
+footer {
+    background-color: var(--neutral-light);
+    padding: 1rem;
+}
+
+footer .logo {
+    height: 2rem;
 }
 
 body.dark-mode {
@@ -30,38 +68,20 @@ body.dark-mode {
     color: var(--primary-blue-dark);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-blue);
-    font-family: Oswald, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+header.dark-mode {
+    background-color: var(--neutral-dark);
 }
 
-h1 {
-    font-size: 32px;
-    margin-top: 0;
+header.dark-mode .logo {
+    content: url("OMI-spelled-out-with-tagline-Horizontal_White.png");
 }
 
-h2 {
-    font-size: 26px;
-    margin-top: 0;
+footer.dark-mode {
+    background-color: var(--neutral-dark);
 }
 
-button {
-    background-color: var(--dark-yellow);
-    border: none;
-    border-radius: 4px;
-    color: var(--primary-blue);
-    cursor: pointer;
-    font-family: Verdana, sans-serif;
-    font-size: 16px;
-    padding: 8px 16px;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-button:hover {
-    background-color: var(--primary-blue);
-    color: var(--neutral);
+footer.dark-mode .logo {
+    content: url("OMI-spelled-out-Horizontal_White.png");
 }
 
 button.dark-mode {
