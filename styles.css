@@ -1,45 +1,52 @@
+:root {
+    /* Dark mode colors based on the OMI Style Guide */
+    --primary-blue: #13294b;
+    --dark-yellow: #ffd125;
+    --salmon: #ee5e5e;
+    --gray-blue: #6fafc7;
+    --teal: #0d605e;
+    --neutral: #E8E9EA;
+}
+
 body {
+    background-color: var(--neutral);
+    color: var(--primary-blue);
     font-family: Verdana, sans-serif;
-    color: #13294b;
-    background-color: #E8E9EA;
-}
-
-#logo img {
-    /* Replace with appropriate dimensions */
-    height: 327px;
-    width: 1087px;
-}
-
-.oswald-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    color: #13294b;
-}
-
-.georgia-subheader {
-    font-family: 'Georgia', serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #13294b;
-}
-
-.verdana-body {
-    font-family: 'Verdana', sans-serif;
     font-size: 16px;
     line-height: 1.25;
-    color: #13294b;
 }
 
-footer {
-    /* Adjust as needed */
-    height: 200px;
-    width: 100%;
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-blue);
+    font-family: Oswald, sans-serif;
 }
 
-footer img {
-    /* Adjust to fit the footer */
-    height: 200px;
-    width: 100%;
+h1 {
+    font-size: 32px;
+    letter-spacing: 100%;
 }
+
+h2 {
+    font-size: 26px;
+    letter-spacing: 75%;
+}
+
+/* You can use .section-head class for section heads in the document */
+.section-head {
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+/* You can use .subheader class for subheaders in the document */
+.subheader {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* For the 'wave' graphic, you might need to edit its image file directly to adjust colors for dark mode */
+.wave-graphic {
+    /* Styles for the 'wave' graphic */
+}
+
+/* Add more CSS rules as needed to style other elements in your document */
