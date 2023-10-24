@@ -49,9 +49,15 @@
             <!-- Contact content goes here -->
         </section>
     </main>
-
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <footer>
         <!-- Footer content goes here -->
     </footer>
+    <script>
+        function toggleDarkMode() {
+            var body = document.querySelector('body');
+            body.classList.toggle('dark-mode');
+        }
+        </script>
 </body>
 </html>
